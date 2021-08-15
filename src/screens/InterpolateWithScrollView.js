@@ -1,21 +1,29 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import Animated, {useAnimatedScrollHandler} from 'react-native-reanimated';
+import Animated, {
+  useAnimatedScrollHandler,
+  useSharedValue,
+} from 'react-native-reanimated';
 import Page from '../components/Page';
 
 const WORDS = ["What's", 'up', 'mobile', 'dev'];
 
 export default function InterpolateWithScrollView() {
+  const translateX = useSharedValue(0);
   const scrollHandler = useAnimatedScrollHandler(event => {
-    console.log(event.contentOffset.x);
+    translateX.value = event.contentOffset.x;
   });
   return (
     <Animated.ScrollView
+      pagingEnabled
       horizontal
       onScroll={scrollHandler}
+      scrollEventThrottle={16}
       style={styles.container}>
       {WORDS.map((word, index) => {
-        return <Page key={word} word={word} index={index} />;
+        return (
+          <Page key={word} word={word} index={index} translateX={translateX} />
+        );
       })}
     </Animated.ScrollView>
   );
