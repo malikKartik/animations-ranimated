@@ -17,8 +17,8 @@ const App = () => {
       {/* <PanGesture /> */}
       {/* <InterpolateWithScrollView /> */}
       {/* <InterpolateColor /> */}
-      {/* <Stories /> */}
-      <DoubleTap />
+      <Stories />
+      {/* <DoubleTap /> */}
     </View>
   );
 };

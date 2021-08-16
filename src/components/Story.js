@@ -39,8 +39,8 @@ export default function Story({title, translateX, index}) {
       Extrapolate.CLAMP,
     );
     return {
-      //   transform: [{perspective: -400}, {rotateY: `${rotateY}deg`}, {scale}],
-      transform: [{scale}],
+      transform: [{perspective: -400}, {rotateY: `${rotateY}deg`}, {scale}],
+      // transform: [{scale}],
       opacity,
     };
   });
