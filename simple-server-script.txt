@@ -1,0 +1,3 @@
+Run this command in any directory to serve it over the port 8080 
+it will be served over LAN and can be used to download the builds in the phone directly
+python -m SimpleHTTPServer 8080
