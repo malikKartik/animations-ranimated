@@ -8,6 +8,7 @@ import InterpolateWithScrollView from './src/screens/InterpolateWithScrollView';
 import PanGesture from './src/screens/PanGesture';
 import DoubleTap from './src/screens/DoubleTap';
 import Stories from './src/screens/Stories';
+import Scroll from './src/screens/Scroll';
 
 const App = () => {
   return (
@@ -17,8 +18,9 @@ const App = () => {
       {/* <PanGesture /> */}
       {/* <InterpolateWithScrollView /> */}
       {/* <InterpolateColor /> */}
-      <Stories />
+      {/* <Stories /> */}
       {/* <DoubleTap /> */}
+      <Scroll />
     </View>
   );
 };

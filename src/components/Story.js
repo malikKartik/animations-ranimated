@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Dimensions,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  View,
-  Image,
-} from 'react-native';
+import {Dimensions, StyleSheet, View, Image} from 'react-native';
 import Animated, {
   Extrapolate,
   interpolate,
