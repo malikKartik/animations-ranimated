@@ -9,6 +9,7 @@ import PanGesture from './src/screens/PanGesture';
 import DoubleTap from './src/screens/DoubleTap';
 import Stories from './src/screens/Stories';
 import Scroll from './src/screens/Scroll';
+import ProgressBar from './src/screens/ProgressBar';
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
       {/* <InterpolateColor /> */}
       {/* <Stories /> */}
       {/* <DoubleTap /> */}
-      <Scroll />
+      {/* <Scroll /> */}
+      <ProgressBar />
     </View>
   );
 };

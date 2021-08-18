@@ -15,6 +15,7 @@ export default function InterpolateWithScrollView() {
   });
   return (
     <Animated.ScrollView
+      pagingEnabled
       horizontal
       onScroll={scrollHandler}
       scrollEventThrottle={16}
